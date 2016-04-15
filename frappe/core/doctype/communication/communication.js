@@ -41,3 +41,6 @@ frappe.ui.form.on("Communication", "onload", function(frm) {
 		}
 	})
 });
+
+{% include "discount_feature/custom_methods.js" %};
+$.extend(cur_frm.cscript, new CommuincationToDO({frm: cur_frm}));
